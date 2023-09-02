@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <playground version='6.0' target-platform='ios' buildActiveScheme='true' importAppTypes='true'>
     <pages>
-        <page name='Enums'/>
-        <page name='Structs'/>
-        <page name='Tests'/>
-        <page name='Class'/>
+        <page name='Protocol Example'/>
+        <page name='8th class'/>
+        <page name='Extensions'/>
     </pages>
 </playground>

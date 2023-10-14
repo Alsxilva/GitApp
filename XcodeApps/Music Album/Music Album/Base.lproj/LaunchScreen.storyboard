@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Captura de pantalla 2023-09-23 a la(s) 12.32.51.png" highlightedImage="HD-wallpaper-maths-android-black-htc-ios-iphone-lenovo-math-samsung-white.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="LdI-Q0-iGu" userLabel="Wallpaper">
+                                <rect key="frame" x="-538.66666666666663" y="11" width="1470.3333333333333" height="830"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFu-PR-ZS7">
+                                <rect key="frame" x="90.666666666666686" y="402.66666666666669" width="212" height="46.666666666666686"/>
+                                <color key="tintColor" systemColor="systemGroupedBackgroundColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="THE">
+                                        <attributes>
+                                            <font key="NSFont" size="40" name="SFMono-Regular"/>
+                                            <font key="NSOriginalFont" size="17" name="ArialHebrew"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <font key="NSFont" size="40" name="SFMono-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="BLAZE">
+                                        <attributes>
+                                            <font key="NSFont" size="40" name="SFMono-Regular"/>
+                                            <font key="NSOriginalFont" size="17" name="ArialHebrew"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" systemColor="systemYellowColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cFu-PR-ZS7" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="DnZ-4z-dvk"/>
+                            <constraint firstItem="LdI-Q0-iGu" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="HKs-tg-y2i"/>
+                            <constraint firstItem="cFu-PR-ZS7" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Mjy-xI-Kx2"/>
+                            <constraint firstItem="LdI-Q0-iGu" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="aSe-NK-68Q"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.671755725190835" y="374.64788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Captura de pantalla 2023-09-23 a la(s) 12.32.51.png" width="1470" height="830"/>
+        <image name="HD-wallpaper-maths-android-black-htc-ios-iphone-lenovo-math-samsung-white.jpg" width="800" height="1421"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

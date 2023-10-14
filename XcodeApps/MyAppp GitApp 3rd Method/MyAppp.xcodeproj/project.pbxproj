@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5536E6E62ADA1DEF009D0BFD /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5536E6E52ADA1DEF009D0BFD /* MainViewController.xib */; };
+		5536E6EB2ADA2EEE009D0BFD /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5536E6EA2ADA2EEE009D0BFD /* ShareViewController.swift */; };
 		5577CA752ABE66D30042772A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5577CA742ABE66D30042772A /* AppDelegate.swift */; };
 		5577CA772ABE66D30042772A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5577CA762ABE66D30042772A /* SceneDelegate.swift */; };
 		5577CA792ABE66D30042772A /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5577CA782ABE66D30042772A /* MainViewController.swift */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		5536E6E52ADA1DEF009D0BFD /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		5536E6EA2ADA2EEE009D0BFD /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		5577CA712ABE66D30042772A /* MyAppp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAppp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5577CA742ABE66D30042772A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5577CA762ABE66D30042772A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				5577CA852ABE66D50042772A /* Info.plist */,
 				5577CA7D2ABE66D30042772A /* MyAppp.xcdatamodeld */,
 				558C7B9A2AD9FE7B001883AF /* CaptionedImage */,
+				5536E6EA2ADA2EEE009D0BFD /* ShareViewController.swift */,
 			);
 			path = MyAppp;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5536E6EB2ADA2EEE009D0BFD /* ShareViewController.swift in Sources */,
 				55A2A3F12AC7894300E55561 /* ImageStackViewController.swift in Sources */,
 				5577CA792ABE66D30042772A /* MainViewController.swift in Sources */,
 				5577CA752ABE66D30042772A /* AppDelegate.swift in Sources */,

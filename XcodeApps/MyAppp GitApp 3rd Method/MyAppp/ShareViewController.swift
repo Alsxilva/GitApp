@@ -33,13 +33,23 @@ class ShareViewController: UIViewController {
         print(textView.text ?? "")
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
+    
     private func setElements(){
         view.addSubview(textView)
+        view.addSubview(shareButton)
         NSLayoutConstraint.activate([
             textView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
             textView.leftAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leftAnchor, constant: 20),
             textView.rightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.rightAnchor, constant: -20),
-            textView.heightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.heightAnchor, multiplier: 0.5)
+            textView.heightAnchor.constraint(equalTo: view.safeAreaLayoutGuide.heightAnchor, multiplier: 0.5),
+            shareButton.topAnchor.constraint(equalTo: textView.bottomAnchor, constant: 20),
+            shareButton.widthAnchor.constraint(equalTo: view.safeAreaLayoutGuide.widthAnchor, multiplier: 0.3),
+            shareButton.heightAnchor.constraint(equalToConstant: 50),
+            shareButton.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
     }
 }

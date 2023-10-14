@@ -28,8 +28,10 @@ class ImageStackViewController: UIViewController {
             secondCaptionedImage.image.image = UIImage(named: "Rafa Separator-10")
             thirdCaptionedImage.image.image = UIImage(named: "Rafa Separator-10")
         }
-        
     }
-   
     
+    @IBAction func segueToShare(_ sender: UIBarButtonItem){
+        let shareViewController = ShareViewController()
+        present(shareViewController, animated: true)
+    }
 }

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
 
 //    override func viewDidLoad() {
 //        super.viewDidLoad()
@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var titleTextField: UITextField!{
         didSet{
-            titleTextField.delegate = self
+            //titleTextField.delegate = self
         }
     }    
     
@@ -53,8 +53,18 @@ class ViewController: UIViewController {
         titleLabel.text = sender.text
     }
     
-    @IBAction func nextButtonTapped(_ sender: UIButton) {
-        print(photoTypeSwitch.isOn)
+    @IBAction func segueToPhoto(_ sender: UIButton) {
+        if sender.tag == 0{
+            guard let photosViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ImageStackViewController") as? ImageStackViewController else { return }
+            photosViewController.showCat = photoTypeSwitch.isOn
+            if customTitleSwitch.isOn {
+                photosViewController.title = titleTextField.text
+            }
+            navigationController?.pushViewController(photosViewController, animated: true)
+        } else {
+            performSegue(withIdentifier: "SegueFromMainPhotos", sender: nil)
+        }
+        /*print(photoTypeSwitch.isOn)*/
     }
 }
 

@@ -8,6 +8,8 @@
 import UIKit
 
 class MusicTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var BandName: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -19,5 +21,7 @@ class MusicTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    
     
 }

@@ -16,6 +16,9 @@
 		556EDDC22AED8B6600BE79E5 /* Music_BandsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556EDDC12AED8B6600BE79E5 /* Music_BandsTests.swift */; };
 		556EDDCC2AED8B6600BE79E5 /* Music_BandsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556EDDCB2AED8B6600BE79E5 /* Music_BandsUITests.swift */; };
 		556EDDCE2AED8B6600BE79E5 /* Music_BandsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556EDDCD2AED8B6600BE79E5 /* Music_BandsUITestsLaunchTests.swift */; };
+		556EDDDC2AED8DDD00BE79E5 /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556EDDDA2AED8DDD00BE79E5 /* MusicTableViewCell.swift */; };
+		556EDDDD2AED8DDD00BE79E5 /* MusicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 556EDDDB2AED8DDD00BE79E5 /* MusicTableViewCell.xib */; };
+		556EDDDF2AED903400BE79E5 /* BandsTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556EDDDE2AED903400BE79E5 /* BandsTableViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		556EDDC72AED8B6600BE79E5 /* Music BandsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Music BandsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		556EDDCB2AED8B6600BE79E5 /* Music_BandsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music_BandsUITests.swift; sourceTree = "<group>"; };
 		556EDDCD2AED8B6600BE79E5 /* Music_BandsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music_BandsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		556EDDDA2AED8DDD00BE79E5 /* MusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
+		556EDDDB2AED8DDD00BE79E5 /* MusicTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicTableViewCell.xib; sourceTree = "<group>"; };
+		556EDDDE2AED903400BE79E5 /* BandsTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandsTableViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,9 @@
 				556EDDB32AED8B6600BE79E5 /* Assets.xcassets */,
 				556EDDB52AED8B6600BE79E5 /* LaunchScreen.storyboard */,
 				556EDDB82AED8B6600BE79E5 /* Info.plist */,
+				556EDDDA2AED8DDD00BE79E5 /* MusicTableViewCell.swift */,
+				556EDDDB2AED8DDD00BE79E5 /* MusicTableViewCell.xib */,
+				556EDDDE2AED903400BE79E5 /* BandsTableViewModel.swift */,
 			);
 			path = "Music Bands";
 			sourceTree = "<group>";
@@ -234,6 +243,7 @@
 				556EDDB72AED8B6600BE79E5 /* LaunchScreen.storyboard in Resources */,
 				556EDDB42AED8B6600BE79E5 /* Assets.xcassets in Resources */,
 				556EDDB22AED8B6500BE79E5 /* Main.storyboard in Resources */,
+				556EDDDD2AED8DDD00BE79E5 /* MusicTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +270,9 @@
 			files = (
 				556EDDAF2AED8B6500BE79E5 /* ViewController.swift in Sources */,
 				556EDDAB2AED8B6500BE79E5 /* AppDelegate.swift in Sources */,
+				556EDDDF2AED903400BE79E5 /* BandsTableViewModel.swift in Sources */,
 				556EDDAD2AED8B6500BE79E5 /* SceneDelegate.swift in Sources */,
+				556EDDDC2AED8DDD00BE79E5 /* MusicTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

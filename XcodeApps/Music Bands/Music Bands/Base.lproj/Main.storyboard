@@ -1,24 +1,112 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Music_Bands" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DWk-Ci-NsV">
+                                <rect key="frame" x="118" y="69" width="157" height="35"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="MusicBands">
+                                        <attributes>
+                                            <color key="NSColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="28" name="BradleyHandITCTT-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="JMW-5v-dAP">
+                                <rect key="frame" x="0.0" y="134" width="393" height="654"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="sectionIndexBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="rFo-T8-wDb"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemFillColor"/>
+                        <constraints>
+                            <constraint firstItem="JMW-5v-dAP" firstAttribute="top" secondItem="DWk-Ci-NsV" secondAttribute="bottom" constant="30" id="Gjn-pq-rpf"/>
+                            <constraint firstItem="JMW-5v-dAP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="J7V-Sv-mVv"/>
+                            <constraint firstItem="DWk-Ci-NsV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jlc-1j-wjM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JMW-5v-dAP" secondAttribute="bottom" constant="30" id="VbR-Xq-Nrg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JMW-5v-dAP" secondAttribute="trailing" id="nvR-Ik-F8Y"/>
+                            <constraint firstItem="DWk-Ci-NsV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="tCk-uV-vRC"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="BandsTableView" destination="JMW-5v-dAP" id="IpZ-7q-xBi"/>
+                        <segue destination="z4a-hG-gS0" kind="show" identifier="Radiohead" id="s41-ko-CF5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="228" y="7"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Gky-Aa-Ahu">
+            <objects>
+                <viewController id="z4a-hG-gS0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gxc-uu-Rwv">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AwJ-yf-efq">
+                                <rect key="frame" x="132.33333333333337" y="10" width="128.66666666666663" height="35"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Radiohead">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="28" name="BradleyHandITCTT-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="U1u-8h-RZI">
+                                <rect key="frame" x="0.0" y="75" width="393" height="737"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pgl-vt-iZW"/>
+                        <color key="backgroundColor" systemColor="systemFillColor"/>
+                        <constraints>
+                            <constraint firstItem="U1u-8h-RZI" firstAttribute="top" secondItem="AwJ-yf-efq" secondAttribute="bottom" constant="30" id="3d1-bA-p6q"/>
+                            <constraint firstItem="U1u-8h-RZI" firstAttribute="leading" secondItem="pgl-vt-iZW" secondAttribute="leading" id="DWt-Hp-hok"/>
+                            <constraint firstItem="AwJ-yf-efq" firstAttribute="top" secondItem="pgl-vt-iZW" secondAttribute="top" constant="10" id="Mvc-xu-Udi"/>
+                            <constraint firstItem="pgl-vt-iZW" firstAttribute="trailing" secondItem="U1u-8h-RZI" secondAttribute="trailing" id="f29-fY-h1p"/>
+                            <constraint firstItem="pgl-vt-iZW" firstAttribute="bottom" secondItem="U1u-8h-RZI" secondAttribute="bottom" constant="30" id="gH9-05-ng9"/>
+                            <constraint firstItem="AwJ-yf-efq" firstAttribute="centerX" secondItem="Gxc-uu-Rwv" secondAttribute="centerX" id="zdt-iy-JOB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="70n-fI-BV5"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eaH-Z0-ZHo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1038.9312977099237" y="5.6338028169014089"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemFillColor">
+            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

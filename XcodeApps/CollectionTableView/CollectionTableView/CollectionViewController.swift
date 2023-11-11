@@ -80,7 +80,7 @@ extension CollectionViewController: UICollectionViewDelegate{
     }
     
     func collectionView(_ collectionView: UICollectionView, moveItemAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
-        let item = myArray.remove(at: sourceIndexPath)
+        let item = dataArray.remove(at: sourceIndexPath.row)
     }
 }
 
